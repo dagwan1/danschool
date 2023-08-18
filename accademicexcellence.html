@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accademic Excellence-Dan School</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets-css/index.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+
+</head>
+
+<body>
+  <!-- index.html -->
+  <header>
+    <div class="header-container">
+        <div class="logo">
+          <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/stlogo.png') }}" alt="Logo"></a>
+            
+
+        </div>
+        <h1>DAN NURSERY & PRIMARY SCHOOL ABUJA</h1>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul class="menu-list">
+                
+              <li> <a href="{{ url_for('index') }}">Home</a></li>
+              <li> <a href="{{ url_for('about') }}">About</a></li>
+              <li> <a href="{{ url_for('services') }}">Our Services</a></li>
+              <li> <a href="{{ url_for('contact') }}">Contact Us</a></li>
+              <li> <a href="{{ url_for('testimonies') }}">Testimonials</a></li>
+              <li> <a href="{{ url_for('admissions') }}">Admissions</a></li>
+              <li> <a href="{{ url_for('login') }}">Login</a></li>
+              <li> <a href="{{ url_for('studentportal') }}">Student Portal</a></li>
+              <li> <a href="{{ url_for('events') }}">Events</a></li>
+     
+                <!-- Add more links as needed -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <section>
+
+            <h1>ACADEMIC EXCELLENCE</h1>
+            <div class="home-background-image" id="home-background-image">
+                <img src="/images/accademic-excellence-home-image.jpg" alt="home image background">
+            </div>
+            <div class="titl-key-facts" id="title-key-facts">
+                <h4>Key Facts</h4>
+            </div>
+            <div class="facts" id="facts">
+                <h3>2021 IB Diploma Results</h3>
+                <p>Our average IB score of 34.9 was 1.88 points higher than the global average</p>
+            </div>
+            <div class="facts" id="facts">
+                <h3>2021 IGCSE Marks</h3>
+                <p>96% of our students achieved A*–C, alongside 26 Distinction awards, 6 Merit awards, and multiple
+                    top-in-country Honours</p>
+            </div>
+
+            <div class="facts" id="facts">
+                <h3>Global University Pathways</h3>
+                <p>Our students receive offers from top universities in the UK, the US, Europe, Canada, and other
+                    international locations</p>
+            </div>
+            <aside class="excellence-aside" id="excellence-aside">
+                <div class="exellence-content" id="excellence-content">
+                    <h1>TAILORED SUPPORT </h1>
+                    <p>Our teachers will place your child at the center of their own learning, allowing us to tailor to
+                        their specific abilities and interests.</p>
+
+                    <p> We consider our students’ different learning styles to develop lessons that are integrated
+                        across different subjects, based on age-appropriate topics that boost their curiosity.</p>
+
+                    <p>And while our students’ learning experiences are filled with personal challenge and growth, they
+                        lead to fantastic outcomes.</p>
+                </div>
+                <div class="exellence-image" id="excellence-image">
+                    <img src="/images/aside-excellence-image.png" alt="aside image">
+                </div>
+            </aside>
+
+            <article class="button-class-range" id="button-class-ragne">
+                <div class="class-range" id="class-range">
+                    <button class="button-to-display-early-years" id="button-to-display-early-years">EARLY YEARS</button>
+                    <button class="button-to-display-primary" id="button-to-display-primary">PRIMARY</button>
+                    <button class="button-to-display-lower-secondary" id="button-to-display-lower-secondary">LOWER
+                        SECONDARY </button>
+                    <button class="button-to-display-igcse-program" id="button-to-display-igcse-program">IGCSE
+                        PROGRAMME</button>
+                    <button class="button-to-display-ib-program" id="button-to-display-ib-program">IB PROGRAMME
+                    </button>
+                </div>
+
+                <div class="left-early-content" id="left-early-contant">
+                    <h1>EARLY YEARS</h1>
+                    <p>We’ll unlock your child’s potential through our internationally recognized curricula,
+                        personalized approach to learning, and integration of subjects. We’ll also guide your child
+                        in
+                        connecting their questions or interests to the world outside of school.</p>
+                </div>
+                <div class="right-early-content" id="right-early-content">
+                    <img src="/images/right-early-content-image.png" alt="right-early-content image">
+                    <h4>2 TO 5 YEARS OLD</h4>
+                    <h1>Early Years Foundation Stage (EYFS)</h1>
+                    <p>We offer a holistic approach to children's learning through purposeful play, tailoring
+                        practical activities and skills to literature and math. We make learning fun through
+                        engaging hands-on experiences.</p>
+                    <a href="/early.html"><button>READ MORE</button></a>
+                </div>
+
+
+                <div class="left-primary-content" id="left-primary-contant">
+                    <h1>PRIMARY SCHOOL <br>(ELEMENTARY)</h1>
+                    <p>We build our students’ confidence as they develop new skills.</p>
+
+                    <p> By exploring modern topics and themes across the subjects, your child will work towards
+                        their questions, interests, and goals in various areas of the International Primary
+                        Curriculum (IPC).</p>
+                </div>
+                <div class="right-primary-content" id="right-primary-content">
+                    <img src="/images/right-primary-content-image.jpg" alt="right-primary-content image">
+                    <h4>5 TO 11 YEARS OLD</h4>
+                    <h1>National Curriculum for England (NCE) and the International Primary Curriculum (IPC)</h1>
+                    <p>Our Primary curriculum combines the best aspects of the NCE and the IPC. We place each child
+                        at the center of their own learning experience, and we develop lessons and activities that
+                        offer opportunities for personal challenge, growth, and success.</p>
+                    <a href="/primary.html"><button>READ MORE</button></a>
+                </div>
+
+                <div class="left-lower-secondary-content" id="left-lower-secondary-contant">
+                    <h1>LOWER SECONDARY <br>(MIDDLE SCHOOL)</h1>
+                    <p>Following the International Middle Years Curriculum and the English National Curriculum, we
+                        nurture our lower secondary students’ curiosity so that they love learning. While we have
+                        specialist teachers for each subject, we’ll also encourage your child to connect their ideas
+                        across the subjects, linking each lesson by “big ideas.”</p>
+                </div>
+                <div class="right-lower-secondary-content" id="right-lower-secondary-content">
+                    <img src="/images/right-lower-secondary-content-image.jpg"
+                        alt="right-lower-secondary-content image">
+                    <h4>11 TO 14 YEARS OLD</h4>
+                    <h1>Learner Profile Diploma and English National Curriculum
+                    </h1>
+                    <p>At DNPS, our students are introduced to a vast array of new and fascinating ideas designed to
+                        develop their critical thinking skills, curiosity, and love of learning. Our lower secondary
+                        curriculum is designed to meet the challenges of a rapidly changing world, promoting both
+                        academic and personal development.</p>
+                    <a href="/lowersecondary.html"><button>READ MORE</button></a>
+                </div>
+
+                <div class="left-igcse-content" id="left-igcse-contant">
+                    <h1>IGCSE PROGRAMME <br>(UPPER SECONDARY)</h1>
+                    <p>In Years 10 and 11 of High School (Upper Secondary), our students complete the two-year Cambridge
+                        IGCSE program, which involves a world-class curriculum that ends in the globally recognized exam
+                        and qualification, as developed by Cambridge University Press & Assessment.</p>
+
+                    <p>Our students go on to achieve impressive IGCSE results, as over half achieve A*–A grades – which
+                        is double the global average. And after the IGCSE qualification, they’ll have the ideal
+                        preparation for continuing to the impressive International Baccalaureate Diploma Programme
+                        (IBDP).</p>
+                </div>
+                <div class="right-igcse-content" id="right-igcse-content">
+                    <img src="/images/right-igcse-content-image.jpg" alt="right-igcse-content image">
+
+                    <h1>The International General Certificate of Secondary Education (IGCSE)
+                    </h1>
+                    <p>Our international program is similar to the UK's General Certificate of Secondary Education
+                        (GCSE), although it has more of a global theme.</p>
+                    <a href="/uppersecondary.html"><button>READ MORE</button></a>
+                </div>
+
+
+                <div class="left-ib-content" id="left-ib-contant">
+                    <h1>THE IB DIPLOMA PROGRAMME <br>(UPPER SECONDARY)</h1>
+                    <p>From Year 12 onward of High School (Upper Secondary), students at BISW all follow the The
+                        International Baccalaureate Diploma Programme to prepare for university. The IB is a challenging
+                        two-year course of study that prepares students for success in a global society. This program of
+                        study leads to the highly regarded qualification that is widely recognized by the world’s
+                        leading universities.</p>
+                </div>
+                <div class="right-ib-content" id="right-ib-content">
+                    <img src="/images/right-ib-content-image.png" alt="right-ib-content image">
+                    <h4>16 TO 18 YEARS OLD</h4>
+
+                    <h1>The IB Diploma Programme
+                    </h1>
+                    <p>The IBDP prepares our students to solve challenges of the future through interdisciplinary study.</p>
+
+                        <p>They’ll choose three subjects to study at Higher Level (HL) and three to study at Standard Level
+                        (SL): Studies in Language and Literature, Language Acquisition, Individuals and Societies,
+                        Sciences, Mathematics, and the Arts.</p>
+
+                        <p>They’ll also have extended essays, service projects, and opportunities to explore specialized
+                        knowledge — while taking time to reflect on the nature of knowledge itself! </p>
+                    <a href="/ibprogram.html"><button>READ MORE</button></a>
+                </div>
+<div class="general-button-range-class" id="general-button-range-class">
+    <img src="/images/general-button-range-image.svg" alt="general button image">
+    <h4>Want to learn more about our curriculum?</h4>
+    <p>Read our curriculum guides to learn more about how our personalized approach to learning can benefit your child.</p>
+    <a href="/curriculumguide.html"><p class="general-button-range-button" id="general-button-range-button"><button>CURRICULA GUIDE</button></p></a>
+</div>
+            </article>
+        </section>
+    </main>
+    <hr>
+    <footer class="footer1">
+        <div class="footer-column">
+            <p>CONTACT DAN INFO</p>
+            <ul>
+                <li><a href="tel:+2348101756091">Call or Text: +234 (0) 810 175 6091</a></li>
+                <li><a href="mailto:info@danschool.edu">Email: info@danschool.edu</a></li>
+                <li><a href="http://info.danschool.edu">Website: info.danschool.edu</a></li>
+                <li>Dan Nursery & Primary School Abuja</li>
+            </ul>
+        </div>
+  
+        <div class="footer-column">
+            <p>RESOURCES</p>
+            <ul>
+                <li><a href="#">A-Z Index</a></li>
+                <li><a href="#">DAN Mobile App (Android)</a></li>
+                <li><a href="#">DAN Mobile App (IOS)</a></li>
+                <li><a href="#">Student Development Services</a></li>
+                <li><a href="#">Employment At DAN</a></li>
+                <li><a href="#">Office Of Belonging</a></li>
+                <li><a href="#">Helping Distressed Students</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Office Of IT</a></li>
+                <li><a href="#">Title IX (Sexual Misconduct)</a></li>
+                <li><a href="#">School Police & Parking</a></li>
+            </ul>
+        </div>
+  
+  
+        <div class="footer-column">
+            <p>OTHER DAN SCHOOLS</p>
+            <ul>
+                <li><a href="#">Dan Jos</a></li>
+                <li><a href="#">Dan Lagos</a></li>
+                <li><a href="#">Dan Logos</a></li>
+                <li><a href="#">Dan College Jos</a></li>
+            </ul>
+        </div>
+  
+        <div class="footer-column">
+            <div class="social-column">
+                <p>CONNECT</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img src="{{ url_for('static', filename='images/fb.png') }}" alt="facebook" class="social"></a>
+                    </li>
+                    <li><a href="https://instagram.com/"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="instagram" class="social"></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/"><img src="{{ url_for('static', filename='images/linkIn.jpg') }}" alt="linkedin" class="social"></a>
+                    </li>
+                    <li><a href="https://www.twitter.com/"><img src="{{ url_for('static', filename='images/twitter.png') }}" alt="twitter" class="social"></a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="connect-list">
+                <li><a href="#">DAN Alumni</a></li>
+                <li><a href="#">DAN Athletics</a></li>
+                <li><a href="#">DAN News</a></li>
+                <li><a href="#">DAN Store</a></li>
+                <li><a href="#">DANtv</a></li>
+            </ul>
+        </div>
+    </footer>
+  
+    <footer class="footer-article">
+        <article class="copy" id="footer">
+            <p class="copy">_____-:- &copy;DAN NURSERY & PRIMARY SCHOOL -:- _____</p>
+            <p class="copy-date"></p>
+        </article>
+    </footer>
+    <script src="{{ url_for('static', filename='assets-js/index.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  </body>
+  
+  </html>
